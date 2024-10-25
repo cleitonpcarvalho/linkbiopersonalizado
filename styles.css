@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: 
+        linear-gradient(45deg, rgba(35, 61, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(35, 61, 255, 0.2) 75%, rgba(35, 61, 255, 0.2)),
+        linear-gradient(45deg, rgba(35, 61, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(35, 61, 255, 0.2) 75%, rgba(35, 61, 255, 0.2));
+    background-size: 20px 20px; /* Tamanho do padrão quadriculado */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #233dff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ... o restante do CSS permanece o mesmo ... */
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transform: translateY(-50px); /* Inicialmente afastado */
+    opacity: 0; /* Inicialmente invisível */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animação suave */
+}
+
+h1, h2, p {
+    transform: translateY(-50px); /* Inicialmente afastado */
+    opacity: 0; /* Inicialmente invisível */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animação suave */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    padding: 15px;
+    background-color: #233dff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: #233dff;
+}
+
+.hidden {
+    visibility: hidden; /* Oculta os elementos inicialmente */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .button {
+        padding: 12px;
+    }
+}
