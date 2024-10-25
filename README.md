@@ -28,7 +28,7 @@ Este projeto consiste em uma página HTML simples, que utiliza CSS para estiliza
 
 ## Demo
 
-Veja a página em funcionamento: [Vídeo de Demonstração] (https://youtu.be/lmmvz2QvyOA?si=u8gBsYsjnzyBIPKs)
+Veja a página em funcionamento: [Vídeo de Demonstração] (https://youtu.be/pUKjlnq-Cbc?si=HNTAxx7DFlER7f_O)
 
 ## Contribuição
 
